@@ -1,0 +1,22 @@
+@import '../../../../../styles.scss/styles.scss';
+
+.modal{
+  form input.form-control,
+  form textarea.form-control,
+  form select.form-select,
+  form select.form-select:focus {
+    font-family: "Cherry Cream Soda",cursive;
+    background-color: rgb(236, 196, 169);
+  }
+}
+
+td.ui-datepicker-days-cell-over.ui-datepicker-today > a,
+#ui-datepicker-div > table > tbody > tr:nth-child(5) > td.ui-datepicker-today > a {
+  border: #c7c2c2;
+  background-color: $color-for-both-theme;
+  color: #c7c2c2;
+}
+
+form button[type="button"].btn-secondary {
+  margin-top: 4%;
+}

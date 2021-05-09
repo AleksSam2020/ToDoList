@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+
+  @media screen and (max-width: 690px) {
+    flex-direction: column;
+    margin-top: -10%;
+  }
+
+  @media screen and (max-width: 395px) {
+    margin-left: -3%;
+  }
+}
