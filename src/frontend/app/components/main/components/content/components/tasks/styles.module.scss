@@ -1,0 +1,58 @@
+@import '../../../../../../styles.scss/styles.scss';
+
+$text-color-for-light-theme: rgb(63, 24, 1);
+
+table {
+  font-family: 'Cherry Cream Soda', cursive;;
+  font-size: 1rem;
+  color: $text-color-for-light-theme;
+  border: 2px solid;
+}
+
+table.table {
+  margin-top: 4%;  
+  border-color: $color-for-borders;
+
+  @media screen and (max-width: 690px) {
+    font-size: 0.5rem;
+  }
+}
+
+table.table.table-dark {
+  color:white
+}
+
+.body {
+  font-weight: 200;
+}
+
+tr:hover,
+tr[scope="col"] {
+  background-color: rgb(236, 196, 169);
+}
+
+.checkbox[type="checkbox"] {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  
+  @media screen and (max-width: 350px) {
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+
+.checkbox:checked,
+.checkbox:focus  {
+  box-shadow: none;
+  border-color: $color-for-both-theme;
+}
+
+.checkbox:checked {
+  background-color: $color-for-both-theme;
+}
+
+th,
+tr {
+  text-align: center;
+}

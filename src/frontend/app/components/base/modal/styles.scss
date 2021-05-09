@@ -1,0 +1,22 @@
+.modal-content {
+  background-color: #e09c80;
+}
+
+.btn-close {
+  background-color: white;
+}
+
+.modal {
+  .form-select:focus,
+  .form-control:focus {
+    box-shadow: none;
+    border-color: none;
+  }
+
+  input.form-control,
+  select.select,
+  input.search-bar-input:focus,
+  select.select:focus {
+    background-color: white;
+  }
+}

@@ -1,0 +1,15 @@
+@import '../../../styles.scss/styles.scss';
+
+.toast {
+  opacity: 1!important;
+  position: absolute;
+  right: 5%;
+  top: 6%;
+  z-index: 1;
+  background-color: $color-for-both-theme;
+  color: white;
+
+  @media screen and (max-width: 380px) {
+    right: 3%;
+  }
+}

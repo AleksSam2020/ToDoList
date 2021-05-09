@@ -1,0 +1,87 @@
+@import '../../node_modules/normalize.css/normalize.css';
+@import 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css';
+@import 'https://use.fontawesome.com/releases/v5.15.2/css/all.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css';
+@import 'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css';
+@import './app/styles.scss/styles.scss';
+@import './app/styles.scss/dark-theme.scss';
+
+*:not(body):not(html) {
+  margin: 1px;
+  padding: 1px;
+}
+
+body.theme-light {
+  background-color: #c99570;
+  color: rgb(97, 59, 43);
+}
+
+html>div {
+  display: none;
+}
+
+#root {
+  position: relative;
+}
+
+.is-finished {
+  text-decoration: line-through;
+}
+
+body.theme-dark {
+  background-color: black;
+  color: white
+}
+
+.jconfirm-content,
+.jconfirm-title {
+  color: white;
+}
+
+.jconfirm .jconfirm-box .jconfirm-buttons button.btn-dark,
+.jconfirm .jconfirm-box .jconfirm-buttons button.btn-dark:hover {
+  background-color: #402424;
+}
+
+.jconfirm .jconfirm-box.jconfirm-type-dark {
+  background-color: $color-for-both-theme;
+  border-top: none;
+}
+
+.btn-secondary:active,
+.btn-secondary:focus {
+background-color:$color-for-both-theme;
+}
+
+.click {
+  background-color: rgb(236, 196, 169);
+  transform: scale(1.1);
+}
+
+table > thead.hide {
+  display: none;
+}
+
+
+@media screen and (max-width: 550px) {
+  td > .btn {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  td > .btn {
+    font-size: 0.45rem;
+  }
+}
+
+
+@media screen and (max-width: 350px) {
+  td > .btn {
+    font-size: 0.25rem;
+  }
+  tr th:nth-child(2),
+  tr td:nth-child(2) {
+    display: none;
+  }
+}

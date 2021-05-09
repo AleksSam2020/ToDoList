@@ -1,0 +1,40 @@
+@import '../../../../../styles.scss/styles.scss';
+
+.ul {
+  margin: 2% 0 0 2%;
+
+  @media screen and (max-width: 690px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.li {
+  list-style-type: none;
+  font-family: 'Poller One', cursive;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 10%;
+  color: #412417;
+  border-bottom: 3px solid;
+  border-bottom-color: $color-for-borders;
+  cursor: pointer;
+
+  @media screen and (max-width: 690px) {
+    font-size: 1rem;
+  }
+}
+
+.li:hover {
+  background-color: rgb(236, 196, 169);
+  transform: scale(1.1);
+}
+
+.li i {
+  margin-left: 4%;
+
+  @media screen and (max-width: 690px) {
+    display: none;
+  }
+}

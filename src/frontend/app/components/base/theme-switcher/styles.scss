@@ -1,0 +1,54 @@
+@import '../../../styles.scss/styles.scss';
+
+.form-check .form-check-input {
+  float: none; 
+  margin-left: 0;
+  width: 1.5em;
+  height: 0.7em;
+  align-items: center;
+  display: none;
+}
+
+.form-check-input:checked {
+  background-color: rgb(121, 115, 115);
+  border-color: white;
+}
+
+.form-check-input:focus {
+  border-color: #020202;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem black;
+}
+
+.form-check-label {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.fa-moon {
+  color: $color-for-both-theme;
+  opacity: 0.3;
+  transform: scale(0.8);
+}
+
+.fa-sun {
+  color: #ff0404;;
+  transform: scale(1.5);
+}
+
+.form-check {
+  display: flex;
+  min-height: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+  align-items: center;
+  margin-top: 10%;
+}
+
+header > div:nth-child(2) {
+  margin-right: 3%;
+}
+
+.form-check-input {
+  margin-top: 0;
+}
